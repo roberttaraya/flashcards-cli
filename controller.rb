@@ -1,5 +1,5 @@
-require './lib/view'
-require './model'
+require_relative './lib/view'
+require_relative './model'
 
 class Controller
   attr_reader :view, :model
