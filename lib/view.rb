@@ -1,8 +1,6 @@
 class View
-  
   def greeting
-    puts "Welcome to the most amazing text based Ruby flavoured quiz programme evah writens."
-    puts "First question, hotshot:"
+    puts "Welcome to the most amazing text based Ruby flavoured quiz programme evah writens. First question, hotshot:"
   end
 
   def wrong_answer
@@ -15,6 +13,11 @@ class View
     puts happiness.sample
   end
 
+  def guess
+    guessiness = ["So you think the answer is: ", "GUESS: ", "Refers to: ", "Might be...: ", "Are you willing to put down money on: ", "Bet you $1 it's: "]
+    print guessiness.sample
+  end
+
   def display_definition(string)
     puts
     puts string
@@ -22,11 +25,6 @@ class View
 
   def next_question
     puts "How about another..."
-  end
-
-  def guess
-    guessiness = ["So you think the answer is: ", "GUESS: ", "Refers to: ", "Might be...: ", "Are you willing to put down money on: ", "Bet you $1 it's: "]
-    print guessiness.sample
   end
 
   def report(right, wrong)

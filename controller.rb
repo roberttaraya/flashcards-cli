@@ -1,9 +1,9 @@
-require './view'
+require './lib/view'
 require './model'
 
 class Controller
   attr_reader :view, :model
-  
+
   def initialize(model, view)
     @model = model
     @view = view
@@ -11,7 +11,7 @@ class Controller
 
   def run
     view.greeting
-    
+
     while model.deck.any?
       view.display_definition(model.get_current_card_definition)
 
