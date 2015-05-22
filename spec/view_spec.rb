@@ -56,6 +56,7 @@ describe View do
   describe "#display_definition" do
     let(:string) { "I'm the definition" }
     let(:message) { "\n" + string + "\n" }
+
     it "displays the definition" do
       expect{ view.display_definition(string) }.to output(message).to_stdout
     end
@@ -64,6 +65,7 @@ describe View do
   describe "#next_question" do
     let(:string) { "How about another..."}
     let(:message) { string + "\n" }
+
     it "asks player if they're read for another" do
       expect{ view.next_question }.to output(message).to_stdout
     end

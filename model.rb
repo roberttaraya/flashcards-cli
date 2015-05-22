@@ -1,5 +1,5 @@
 require_relative './lib/card'
-require_relative './deck'
+require_relative './lib/deck'
 
 class Model
   attr_reader :deck, :wrong, :right
